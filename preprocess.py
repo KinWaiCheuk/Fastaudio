@@ -7,7 +7,7 @@ if __name__ == '__main__':
     print('----Start to Process Data -----')
 
     args = {}
-    args['data_type'] = ['labeled','unlabeled'][1]
+    args['data_type'] = ['labeled','unlabeled'][0]
 
     if args['data_type'] == 'labeled':
         print('Start to process labeled data:')
@@ -16,7 +16,7 @@ if __name__ == '__main__':
         PRO_FILES = ('ASVspoof2019.LA.cm.train.trn.txt',
                      'ASVspoof2019.LA.cm.dev.trl.txt',
                      'ASVspoof2019.LA.cm.eval.trl.txt')
-        SAVE_DIR = '2021_data/'
+        SAVE_DIR = 'processed_data/'
         DATA_DIR = '../data/'
         split_features= get_cm_protocols(pro_dir=LA_PRO_DIR,
                                          pro_files=PRO_FILES

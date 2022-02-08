@@ -44,7 +44,7 @@ def get_dataset_annotation(split_features,
                            feature_name = 'cm',
                            data_dir = '../data',
                            file_name = 'ASVspoof2019',
-                           data_type = 'PA',
+                           data_type = 'LA',
                            voice_dir = 'flac',
                            save_dir = 'processed_data/',
                            ):

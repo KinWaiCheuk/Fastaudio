@@ -240,7 +240,7 @@ class SpoofSpeechClassifier(sb.Brain):
 
         def split_target_non_target():
             pred_file = 'predictions/scores.txt'
-            gt_file = 'processed_data/la_cm_dev.json'
+            gt_file = 'processed_data/cm_dev.json'
             with open(gt_file, 'r') as f:
                 gt = json.load(f)
 
